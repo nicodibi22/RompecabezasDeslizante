@@ -7,15 +7,6 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 
 import java.awt.GridLayout;
-
-
-
-
-
-
-
-
-
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
@@ -29,14 +20,11 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import javax.swing.JLabel;
 
-import org.eclipse.swt.browser.WindowEvent;
-import org.eclipse.swt.events.DisposeEvent;
 
 public class MainForm {
 
@@ -136,7 +124,7 @@ public class MainForm {
 		btnDerecha.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseEntered(MouseEvent arg0) {
-				btnDerecha.setBackground(Color.GREEN);
+				btnDerecha.setBackground(Color.WHITE);
 			}
 			@Override
 			public void mouseExited(MouseEvent arg0) {

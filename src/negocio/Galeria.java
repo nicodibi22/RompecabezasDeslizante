@@ -26,11 +26,20 @@ public class Galeria {
 		return imagenes.size();
 	}
 	
-	public Image getProximaImagen(){
+	public Image getImagenSiguiente(){
 		
 		posicionActual++;
 		if(posicionActual == size()){
 			posicionActual = 0;
+		}		
+		return imagenes.get(posicionActual);		
+	}
+	
+	public Image getImagenAnterior(){
+		
+		posicionActual--;
+		if(posicionActual < 0){
+			posicionActual = size() - 1;
 		}		
 		return imagenes.get(posicionActual);		
 	}

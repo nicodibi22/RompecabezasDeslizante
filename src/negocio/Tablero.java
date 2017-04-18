@@ -18,7 +18,7 @@ class Tablero {
 	 * Arma un tablero de tamaño alto x ancho.
 	 * @param alto
 	 * @param ancho
-	 * @throws IllegalArgumentException
+	 * @throws IllegalArgumentException: El alto y el ancho deben ser mayor a 0 (cero).
 	 */
 	public Tablero(int alto, int ancho) throws IllegalArgumentException {
 		if (alto <= 0 || ancho <= 0) {

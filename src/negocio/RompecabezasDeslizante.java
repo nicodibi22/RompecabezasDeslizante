@@ -23,7 +23,7 @@ public class RompecabezasDeslizante {
 	public RompecabezasDeslizante(int alto, int ancho) throws Exception {
 		
 		tableroJuego = new Tablero(alto, ancho);		
-		desordenarCasillas();
+		desordenarPiezas();
 		movimientos = 0;
 	}
 	
@@ -63,7 +63,7 @@ public class RompecabezasDeslizante {
 		return movimientos;
 	}
 		
-	private void desordenarCasillas() {
+	private void desordenarPiezas() {
 
 		Random numAleatorio = new Random();
 		Direccion direccion;
